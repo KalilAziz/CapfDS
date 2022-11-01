@@ -1,0 +1,3 @@
+{
+  "extends": ["@capfds-ui/eslint-config"]
+}

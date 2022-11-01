@@ -1,0 +1,22 @@
+{
+  "name": "@capfds-ui/tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@capfds-ui/eslint-config": "*",
+    "@capfds-ui/ts-config": "*",
+    "tsup": "^6.3.0",
+    "typescript": "^4.8.4"
+  }
+}
