@@ -3,7 +3,7 @@ import { styled } from '../styles'
 
 export const Button = styled('button', {
   all: 'unset',
-  padding: '$3 $4',
+  padding: '$2 $6',
   display: 'flex',
   alignItems: 'center',
   fontWeight: '$bold',

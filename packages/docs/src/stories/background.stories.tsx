@@ -31,7 +31,6 @@ export const Primary: StoryObj<ContainerBackgroundProps> = {
               Nullalorem ipsum dolor sit amet, consectetur adipiscing elit.
               Nullalorem ipsum dolor sit amet, consectetur adipiscing elit.
               Nullalorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Nulla
             </Text>
           </SectionContent>
         </Background.Content>
