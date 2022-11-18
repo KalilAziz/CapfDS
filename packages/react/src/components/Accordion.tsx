@@ -14,9 +14,9 @@ const slideUp = keyframes({
 })
 
 const StyledAccordion = styled(AccordionPrimitive.Root, {
-  width: '100%',
   display: 'flex',
   flexDirection: 'column',
+  width: '100%',
   gap: 10,
   borderRadius: '$sm',
 })
