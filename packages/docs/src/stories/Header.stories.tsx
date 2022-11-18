@@ -10,7 +10,9 @@ export default {
   args: {
     children: [
       <Header.Logo key="">
-        <img src={imageLogo} alt="logo" />
+        <a href="">
+          <img src={imageLogo} alt="logo" />
+        </a>
       </Header.Logo>,
       <Header.Navbar key="">
         <Header.Ul>

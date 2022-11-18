@@ -1,5 +1,11 @@
 # @capfds-ui/react
 
+## 2.5.0
+
+### Minor Changes
+
+- widht logo component Header
+
 ## 2.4.0
 
 ### Minor Changes

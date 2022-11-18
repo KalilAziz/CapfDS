@@ -7,8 +7,10 @@ import { IoMdClose } from 'react-icons/io'
 import { BsFillSunFill, BsMoon } from 'react-icons/bs'
 
 const Logo = styled(Slot, {
-  '@bp1': {
-    width: '70px',
+  img: {
+    '@bp1': {
+      width: '70px',
+    },
   },
 })
 
