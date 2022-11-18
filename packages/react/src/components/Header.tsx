@@ -6,14 +6,42 @@ import { HiOutlineMenu } from 'react-icons/hi'
 import { IoMdClose } from 'react-icons/io'
 import { BsFillSunFill, BsMoon } from 'react-icons/bs'
 
-const Container = styled('header', {
-  backgroundColor: '$green400',
-  width: '100%',
-})
-
-const Logo = styled('img', {
+const Logo = styled(Slot, {
   '@bp1': {
     width: '70px',
+  },
+})
+
+const Ul = styled('ul', {})
+
+const Li = styled('li', {})
+
+const ToggleMenu = styled(Slot, {
+  zIndex: '6',
+  position: 'absolute',
+  right: '2rem',
+  width: '2rem',
+  height: '2rem',
+  backgroundColor: '$green400',
+  color: '$white',
+  border: 'none',
+  display: 'none',
+  transition: 'all 300ms ease-in-out',
+
+  '@bp1': {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  variants: {
+    openMenu: {
+      true: {
+        transition: 'all 300ms ease-in-out',
+        color: '$yellow900',
+      },
+      false: {},
+    },
   },
 })
 
@@ -117,46 +145,20 @@ const Navbar = styled('nav', {
       },
     },
   },
-
-  variants: {
-    openMenu: {
-      true: {
-        visibility: 'visible',
-        opacity: '1',
-        transform: 'translateX(0px)',
-      },
-      false: {},
-    },
-  },
 })
 
-const Ul = styled('ul', {})
-
-const Li = styled('li', {})
-
-const ToggleMenu = styled(Slot, {
-  zIndex: '6',
-  position: 'absolute',
-  right: '2rem',
-  width: '2rem',
-  height: '2rem',
+const Container = styled('header', {
   backgroundColor: '$green400',
-  color: '$white',
-  border: 'none',
-  display: 'none',
-  transition: 'all 300ms ease-in-out',
-
-  '@bp1': {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
+  width: '100%',
 
   variants: {
     openMenu: {
       true: {
-        transition: 'all 300ms ease-in-out',
-        color: '$yellow900',
+        [`& ${Navbar}`]: {
+          visibility: 'visible',
+          opacity: '1',
+          transform: 'translateX(0px)',
+        },
       },
       false: {},
     },
@@ -170,7 +172,7 @@ interface ThemeProps {
 const Theme = ({ theme }: ThemeProps) => {
   return theme ? <BsFillSunFill /> : <BsMoon />
 }
-// logoUrl image svg
+
 interface HeaderComponentProps {
   children: ReactNode
 }
@@ -178,7 +180,7 @@ interface HeaderComponentProps {
 const HeaderComponent = ({ children }: HeaderComponentProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
-    <Container>
+    <Container openMenu={isMenuOpen}>
       <SectionContent
         css={{
           display: 'flex',
@@ -186,16 +188,13 @@ const HeaderComponent = ({ children }: HeaderComponentProps) => {
           alignItems: 'center',
         }}
       >
-        <a href="/">
-          <Logo src='../src/assets/images/logoCapf.svg' alt="CapFDS" />
-        </a>
         <ToggleMenu
           onClick={() => setIsMenuOpen((op) => !op)}
           openMenu={isMenuOpen}
         >
           {isMenuOpen ? <IoMdClose /> : <HiOutlineMenu />}
         </ToggleMenu>
-        <Navbar openMenu={isMenuOpen}>{children}</Navbar>
+        {children}
       </SectionContent>
     </Container>
   )
@@ -203,6 +202,8 @@ const HeaderComponent = ({ children }: HeaderComponentProps) => {
 
 export const Header = {
   Root: HeaderComponent,
+  Navbar,
+  Logo,
   Ul,
   Li,
   Theme,
