@@ -14,11 +14,11 @@ const slideUp = keyframes({
 })
 
 const StyledAccordion = styled(AccordionPrimitive.Root, {
-  borderRadius: '$sm',
   width: '100%',
   display: 'flex',
   flexDirection: 'column',
   gap: 10,
+  borderRadius: '$sm',
 })
 
 const StyledItem = styled(AccordionPrimitive.Item, {
