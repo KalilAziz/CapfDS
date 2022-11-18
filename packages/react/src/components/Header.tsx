@@ -170,14 +170,12 @@ interface ThemeProps {
 const Theme = ({ theme }: ThemeProps) => {
   return theme ? <BsFillSunFill /> : <BsMoon />
 }
-
+// logoUrl image svg
 interface HeaderComponentProps {
   children: ReactNode
-  logoUrl: string
-  iconMenu: ReactNode
 }
 
-const HeaderComponent = ({ children, logoUrl }: HeaderComponentProps) => {
+const HeaderComponent = ({ children }: HeaderComponentProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <Container>
@@ -189,7 +187,7 @@ const HeaderComponent = ({ children, logoUrl }: HeaderComponentProps) => {
         }}
       >
         <a href="/">
-          <Logo src={logoUrl} alt="CapFDS" />
+          <Logo src='../src/assets/images/logoCapf.svg' alt="CapFDS" />
         </a>
         <ToggleMenu
           onClick={() => setIsMenuOpen((op) => !op)}

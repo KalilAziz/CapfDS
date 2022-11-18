@@ -1,5 +1,11 @@
 # @capfds-ui/react
 
+## 2.3.0
+
+### Minor Changes
+
+- Image component Header
+
 ## 2.2.0
 
 ### Minor Changes

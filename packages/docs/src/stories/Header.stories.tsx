@@ -3,12 +3,12 @@ import { Button, Header, Text } from '@capfds-ui/react'
 import { BsBoxArrowInRight } from 'react-icons/bs'
 import { IoIosArrowDown } from 'react-icons/io'
 import { useState } from 'react'
-
+import logo from '../assets/images/logoCapf.svg'
 export default {
   title: 'Components/Header',
   component: Header.Root,
   args: {
-    logoUrl: './src/assets/images/logoCapf.svg',
+    logoUrl: logo,
     children: (
       <Header.Ul>
         <Header.Li>Home</Header.Li>
