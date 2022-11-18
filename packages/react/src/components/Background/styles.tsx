@@ -13,8 +13,8 @@ export const Content = styled('div', {
 })
 
 export const CircleLeft = styled('div', {
-  position: 'absolute',
   backgroundColor: '$green400',
+  position: 'absolute',
   borderRadius: '$full',
   width: '500px',
   height: '500px',
