@@ -1,12 +1,12 @@
 import { styled } from '../styles'
 import { SectionContent } from './SectionContent'
 import {
-  UilMapMarker,
-  UilEnvelope,
-  UilBracketsCurly,
-  UilFacebook,
-  UilInstagramAlt,
-} from '@iconscout/react-unicons'
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+  AiOutlineMail,
+} from 'react-icons/ai'
+import { HiOutlineMap } from 'react-icons/hi'
+import { BsCodeSlash } from 'react-icons/bs'
 
 const Container = styled('footer', {
   backgroundColor: '$green400',
@@ -17,61 +17,67 @@ const Container = styled('footer', {
     borderColor: '$green500',
     margin: '0',
   },
+
+  svg: {
+    display: 'flex',
+    alignItems: 'center',
+    minHeight: '1.8rem',
+    Height: '1.8rem',
+    minWidth: '1.8rem',
+    width: '1.8rem',
+    justifyContent: 'center',
+    color: '$yellow900',
+    fontSize: '$5xl',
+  },
+
+  '@bp1': {
+    fontSize: '$sm',
+  },
 })
 const Content = styled('div', {
-  display: 'flex',
-  flexWrap: 'wrap',
-  padding: '$10',
+  display: 'grid',
+  justifyContent: 'center',
+  textAlign: 'center',
+  gridTemplateColumns: '2fr 1fr',
+
   span: {
     display: 'flex',
     alignItems: 'center',
     gap: '0.5rem',
     color: '$white',
   },
-  svg: {
-    color: '$yellow900',
-  },
 
   '.adress': {
-    flex: '1',
-    minWidth: '350px',
-
+    display: 'flex',
+    flexDirection: 'column',
     span: {
       marginTop: '$4',
       marginBottom: '$4',
     },
   },
   '.social': {
-    flex: '1',
-    minWidth: '350px',
     display: 'flex',
     justifyContent: 'flex-end',
-
-    svg: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
 
     '@bp1': {
       justifyContent: 'center',
     },
+  },
+
+  '@bp1': {
+    gridTemplateColumns: '1fr',
   },
 })
 const Copy = styled('div', {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-
   span: {
     display: 'flex',
     alignItems: 'center',
     gap: '0.5rem',
     color: '$white',
-
-    svg: {
-      color: '$yellow900',
-    },
+    textAlign: 'center',
   },
 })
 
@@ -82,17 +88,17 @@ export const Footer = () => {
         <Content>
           <div className="adress">
             <span>
-              <UilMapMarker size="1.5rem" />
+              <HiOutlineMap />
               R. 235, 15 - Setor Leste Universitário, Goiânia - GO, 74605-050
             </span>
             <span>
-              <UilEnvelope size="1.5rem" />
+              <AiOutlineMail />
               capfmedpucgo@gmail.com
             </span>
           </div>
           <div className="social">
-            <UilFacebook size="3rem" />
-            <UilInstagramAlt size="3rem" />
+            <AiOutlineFacebook />
+            <AiOutlineInstagram />
           </div>
         </Content>
       </SectionContent>
@@ -100,7 +106,7 @@ export const Footer = () => {
       <SectionContent>
         <Copy>
           <span>
-            <UilBracketsCurly size="1.5rem" />
+            <BsCodeSlash size="1.5rem" />
             Desenvolvido por ELO Júnior Engenharias e Arquitetura
           </span>
         </Copy>

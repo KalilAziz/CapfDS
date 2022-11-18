@@ -76,6 +76,20 @@ export default {
       </>
     ),
   },
+  argTypes: {
+    type: {
+      table: { disable: true },
+    },
+    defaultValue: {
+      table: { disable: true },
+    },
+    collapsible: {
+      table: { disable: true },
+    },
+    children: {
+      table: { disable: true },
+    },
+  },
   decorators: [
     (Story) => (
       <Background.Root dark>

@@ -26,6 +26,13 @@ export default {
       </>
     ),
   },
+  argTypes: {
+    children: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   decorators: [
     (Story) => (
       <Background.Root dark>

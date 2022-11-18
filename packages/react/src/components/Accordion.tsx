@@ -52,13 +52,12 @@ const StyledTrigger = styled(AccordionPrimitive.Trigger, {
   all: 'unset',
   fontFamily: 'inherit',
   backgroundColor: 'trasparent',
-  padding: '0 20px',
-  height: 45,
+  padding: '$3 $4',
   flex: 1,
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  fontSize: 15,
+  fontSize: '$md',
   lineHeight: 1,
   color: '$white',
   '&[data-state="closed"]': { backgroundColor: '$green150' },
@@ -86,6 +85,8 @@ const StyledContentText = styled('div', {
 
 const StyledChevron = styled(IoIosArrowDown, {
   fontSize: '$xl',
+  minWidth: '1rem',
+  minHeight: '1rem',
   transition: 'transform 300ms cubic-bezier(0.87, 0, 0.13, 1)',
   '[data-state=open] &': { transform: 'rotate(180deg)' },
 })

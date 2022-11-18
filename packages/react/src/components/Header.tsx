@@ -188,7 +188,9 @@ const HeaderComponent = ({ children, logoUrl }: HeaderComponentProps) => {
           alignItems: 'center',
         }}
       >
-        <Logo src={logoUrl} alt="CapFDS" />
+        <a href="/">
+          <Logo src={logoUrl} alt="CapFDS" />
+        </a>
         <ToggleMenu
           onClick={() => setIsMenuOpen((op) => !op)}
           openMenu={isMenuOpen}

@@ -15,8 +15,8 @@ export default {
   },
   argTypes: {
     children: {
-      control: {
-        type: null,
+      table: {
+        disable: true,
       },
     },
     colors: {

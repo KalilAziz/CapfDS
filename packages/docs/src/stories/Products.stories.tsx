@@ -17,6 +17,13 @@ const css = {
 export default {
   title: 'Components/Products',
   component: ProductsArea.Root,
+  argTypes: {
+    children: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   decorators: [
     (Story) => (
       <Background.Root dark css={css}>
@@ -84,4 +91,37 @@ export const Caneta: StoryObj = {
       </>
     ),
   },
+}
+
+export const Products: StoryObj = {
+  args: {
+    children: (
+      <>
+        <ProductsArea.Image src="./src/assets/images/caneta.svg" />
+        <div>
+          <ProductsArea.container>Caneta CAPF</ProductsArea.container>
+          <ProductsArea.Button>
+            <Text css={{ color: '$white' }} size="xl">
+              Saiba mais
+            </Text>
+          </ProductsArea.Button>
+        </div>
+      </>
+    ),
+  },
+  decorators: [
+    (Story) => (
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: '2rem',
+        }}
+      >
+        <Story />
+        <Story />
+        <Story />
+      </div>
+    ),
+  ],
 }

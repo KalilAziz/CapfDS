@@ -1,33 +1,25 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { CarouselComponent, SectionContent } from '@capfds-ui/react'
+import {
+  CarouselComponent,
+  SectionContent,
+  arrowStyles,
+  indicatorStyles,
+  Text,
+} from '@capfds-ui/react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
-import { CSSProperties } from 'react'
 import { MdOutlineArrowBackIosNew } from 'react-icons/md'
-
-const arrowStyles: CSSProperties = {
-  position: 'absolute',
-  top: 'calc(50% - 15px)',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  width: 30,
-  height: 30,
-  backgroundColor: '#90B49C',
-  boxShadow: '5px 5px 52px rgba(0, 0, 0, 0.14)',
-  borderRadius: '50%',
-  border: 'none',
-  cursor: 'pointer',
-  zIndex: 2,
-}
-
-const indicatorStyles: CSSProperties = {
-  display: 'none',
-}
 
 export default {
   title: 'Components/Carousel',
   component: SectionContent,
+  argTypes: {
+    children: {
+      table: {
+        disable: true,
+      },
+    },
+  },
 } as Meta
 
 export const Primary: StoryObj = {
@@ -35,7 +27,6 @@ export const Primary: StoryObj = {
     children: (
       <Carousel
         infiniteLoop
-        // centerMode
         showStatus={false}
         showThumbs={false}
         statusFormatter={(current, total) =>
@@ -93,16 +84,19 @@ export const Primary: StoryObj = {
         }}
       >
         <CarouselComponent.Item>
-          <CarouselComponent.Content>Evento Teste</CarouselComponent.Content>
-          <CarouselComponent.Legend></CarouselComponent.Legend>
+          <CarouselComponent.Content>
+            <Text>Evento: XXXXX</Text>
+          </CarouselComponent.Content>
         </CarouselComponent.Item>
         <CarouselComponent.Item>
-          <CarouselComponent.Content>Evento Teste</CarouselComponent.Content>
-          <CarouselComponent.Legend></CarouselComponent.Legend>
+          <CarouselComponent.Content>
+            <Text>Evento: XXXXX</Text>
+          </CarouselComponent.Content>
         </CarouselComponent.Item>
         <CarouselComponent.Item>
-          <CarouselComponent.Content>Evento Teste</CarouselComponent.Content>
-          <CarouselComponent.Legend></CarouselComponent.Legend>
+          <CarouselComponent.Content>
+            <Text>Evento: XXXXX</Text>
+          </CarouselComponent.Content>
         </CarouselComponent.Item>
       </Carousel>
     ),
@@ -172,7 +166,7 @@ export const Secondary: StoryObj = {
         }}
       >
         <CarouselComponent.Item>
-          <CarouselComponent.Content>
+          <CarouselComponent.Content border="full">
             <img src="./src/assets/images/logoCapf.svg" alt="" />
           </CarouselComponent.Content>
           <CarouselComponent.Legend></CarouselComponent.Legend>
@@ -184,7 +178,7 @@ export const Secondary: StoryObj = {
           <CarouselComponent.Legend></CarouselComponent.Legend>
         </CarouselComponent.Item>
         <CarouselComponent.Item>
-          <CarouselComponent.Content>
+          <CarouselComponent.Content border="full">
             <img src="./src/assets/images/logoCapf.svg" alt="" />
           </CarouselComponent.Content>
           <CarouselComponent.Legend></CarouselComponent.Legend>

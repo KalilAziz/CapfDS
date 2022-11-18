@@ -13,7 +13,18 @@ export default {
     css: { height: '100vh' },
     dark: false,
   },
-  argTypes: {},
+  argTypes: {
+    children: {
+      table: {
+        disable: true,
+      },
+    },
+    css: {
+      table: {
+        disable: true,
+      },
+    },
+  },
 } as Meta<ContainerBackgroundProps>
 
 export const Primary: StoryObj<ContainerBackgroundProps> = {
@@ -23,7 +34,7 @@ export const Primary: StoryObj<ContainerBackgroundProps> = {
         <Background.CL />
         <Background.Content>
           <SectionContent>
-            <Text>
+            <Text colors="green700">
               lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Nullalorem ipsum dolor sit amet, consectetur adipiscing elit.
               Nullalorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -45,7 +56,7 @@ export const NoCircle: StoryObj<ContainerBackgroundProps> = {
     children: (
       <Background.Content>
         <SectionContent>
-          <Text>
+          <Text colors="green700">
             lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullalorem
             ipsum dolor sit amet, consectetur adipiscing elit. Nullalorem ipsum
             dolor sit amet, consectetur adipiscing elit. Nullalorem ipsum dolor

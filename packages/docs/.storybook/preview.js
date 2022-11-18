@@ -7,6 +7,7 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  layout: 'fullscreen',
   docs: {
     theme: themes.dark,
   }

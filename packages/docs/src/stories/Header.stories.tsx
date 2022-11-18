@@ -54,6 +54,18 @@ export default {
       </Header.Ul>
     ),
   },
+  argTypes: {
+    logoUrl: {
+      table: {
+        disable: true,
+      },
+    },
+    children: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   decorators: [
     (Story) => {
       const state = useState(false)
