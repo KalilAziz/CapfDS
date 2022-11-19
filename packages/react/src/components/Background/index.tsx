@@ -11,14 +11,14 @@ export interface ContainerBackgroundProps
 
 export const ContainerBackground = ({
   children,
-  theme = 'light',
+  theme,
   as,
   ...props
 }: ContainerBackgroundProps) => {
   return (
     <BackgroundContainer
       as={as}
-      className={theme === 'dark' ? darkTheme : theme === 'undefined' ? '' : ''}
+      className={theme === 'dark' ? darkTheme : darkTheme}
       {...props}
     >
       {children}

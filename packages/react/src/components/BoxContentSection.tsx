@@ -61,6 +61,9 @@ const BoxImage = styled('div', {
   borderRight: '2px solid',
   borderColor: '$green100',
 
+  display: 'flex',
+  alignItems: 'center',
+
   img: {
     width: '100%',
     objectFit: 'cover',
@@ -95,7 +98,7 @@ const Line = styled('div', {
   borderRadius: '$full',
 })
 
-export const BoxEvents = {
+export const BoxContentSection = {
   Root,
   Container,
   Content,

@@ -1,5 +1,11 @@
 # @capfds-ui/react
 
+## 2.10.0
+
+### Minor Changes
+
+- setting component BoxContentSection
+
 ## 2.9.0
 
 ### Minor Changes
