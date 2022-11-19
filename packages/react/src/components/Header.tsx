@@ -10,7 +10,7 @@ const Logo = styled(Slot, {
   img: {
     '@bp1': {
       width: '70px',
-      height: '70px',
+      height: '68px',
     },
   },
 })

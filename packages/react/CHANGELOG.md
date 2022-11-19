@@ -1,5 +1,17 @@
 # @capfds-ui/react
 
+## 2.6.0
+
+### Minor Changes
+
+- height Header
+
+## 2.6.0
+
+### Minor Changes
+
+- height and theme light/dark component header
+
 ## 2.5.0
 
 ### Minor Changes
