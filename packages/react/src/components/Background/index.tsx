@@ -6,17 +6,21 @@ export interface ContainerBackgroundProps
   extends ComponentProps<typeof BackgroundContainer> {
   as?: ElementType
   children?: ReactNode
-  dark?: boolean
+  theme?: string
 }
 
 export const ContainerBackground = ({
   children,
-  dark = false,
+  theme = 'light',
   as,
   ...props
 }: ContainerBackgroundProps) => {
   return (
-    <BackgroundContainer as={as} className={dark ? darkTheme : ''} {...props}>
+    <BackgroundContainer
+      as={as}
+      className={theme === 'dark' ? darkTheme : theme === 'undefined' ? '' : ''}
+      {...props}
+    >
       {children}
     </BackgroundContainer>
   )

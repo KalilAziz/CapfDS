@@ -1,5 +1,11 @@
 # @capfds-ui/react
 
+## 2.8.0
+
+### Minor Changes
+
+- Background component - settings themes
+
 ## 2.7.0
 
 ### Minor Changes

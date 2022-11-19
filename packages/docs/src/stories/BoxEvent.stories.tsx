@@ -35,7 +35,7 @@ export default {
   },
   decorators: [
     (Story) => (
-      <Background.Root dark>
+      <Background.Root theme="dark">
         <Background.Content>
           <SectionContent>
             <Story />

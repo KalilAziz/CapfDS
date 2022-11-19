@@ -11,9 +11,15 @@ export default {
   component: Background.Root,
   args: {
     css: { height: '100vh' },
-    dark: false,
+    theme: 'light',
   },
   argTypes: {
+    theme: {
+      control: {
+        type: 'select',
+        options: ['light', 'dark'],
+      },
+    },
     children: {
       table: {
         disable: true,
