@@ -10,6 +10,7 @@ const Logo = styled(Slot, {
   img: {
     '@bp1': {
       width: '70px',
+      height: '70px',
     },
   },
 })
@@ -168,11 +169,17 @@ const Container = styled('header', {
 })
 
 interface ThemeProps {
-  theme: boolean
+  theme: string
 }
 
 const Theme = ({ theme }: ThemeProps) => {
-  return theme ? <BsFillSunFill /> : <BsMoon />
+  return theme === 'light' ? (
+    <BsFillSunFill />
+  ) : theme === 'dark' ? (
+    <BsMoon />
+  ) : (
+    ''
+  )
 }
 
 interface HeaderComponentProps {
