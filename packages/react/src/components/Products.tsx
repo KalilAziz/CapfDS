@@ -31,7 +31,7 @@ const Root = styled('div', {
   },
 })
 
-const Image = styled('img', {
+const Image = styled(Slot, {
   border: '5px solid',
   borderColor: '$green900',
   borderRadius: '$lg',
@@ -51,9 +51,10 @@ const Title = styled(Slot, {
 })
 const Line = styled('hr', {
   width: '80%',
-  height: 2,
+  height: 3,
   borderColor: '$green900',
   backgroundColor: '$green900',
+  margin: 'auto',
 })
 
 const Button = styled('button', {

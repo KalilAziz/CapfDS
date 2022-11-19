@@ -26,7 +26,7 @@ export default {
   },
   decorators: [
     (Story) => (
-      <Background.Root dark css={css}>
+      <Background.Root theme="dark" css={css}>
         <Background.CL />
         <Background.Content>
           <SectionContent>
@@ -43,7 +43,9 @@ export const Caneca: StoryObj = {
   args: {
     children: (
       <>
-        <ProductsArea.Image src="./src/assets/images/caneca.svg" />
+        <ProductsArea.Image>
+          <img src="./src/assets/images/caneca.svg" alt="" />
+        </ProductsArea.Image>
         <div>
           <ProductsArea.container>Caneca CAPF</ProductsArea.container>
           <ProductsArea.Button>
@@ -61,7 +63,9 @@ export const Garrafa: StoryObj = {
   args: {
     children: (
       <>
-        <ProductsArea.Image src="./src/assets/images/garrafa.svg" />
+        <ProductsArea.Image>
+          <img src="./src/assets/images/caneca.svg" alt="" />
+        </ProductsArea.Image>
         <div>
           <ProductsArea.container>Garrafa CAPF</ProductsArea.container>
           <ProductsArea.Button>
@@ -79,7 +83,9 @@ export const Caneta: StoryObj = {
   args: {
     children: (
       <>
-        <ProductsArea.Image src="./src/assets/images/caneta.svg" />
+        <ProductsArea.Image>
+          <img src="./src/assets/images/caneca.svg" alt="" />
+        </ProductsArea.Image>
         <div>
           <ProductsArea.container>Caneta CAPF</ProductsArea.container>
           <ProductsArea.Button>
@@ -97,7 +103,9 @@ export const Products: StoryObj = {
   args: {
     children: (
       <>
-        <ProductsArea.Image src="./src/assets/images/caneta.svg" />
+        <ProductsArea.Image>
+          <img src="./src/assets/images/caneca.svg" alt="" />
+        </ProductsArea.Image>
         <div>
           <ProductsArea.container>Caneta CAPF</ProductsArea.container>
           <ProductsArea.Button>

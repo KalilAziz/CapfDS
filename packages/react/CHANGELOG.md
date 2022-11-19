@@ -1,5 +1,11 @@
 # @capfds-ui/react
 
+## 2.9.0
+
+### Minor Changes
+
+- Component Products
+
 ## 2.8.0
 
 ### Minor Changes
