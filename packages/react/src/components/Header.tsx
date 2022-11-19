@@ -4,7 +4,6 @@ import { styled } from '../styles'
 import { SectionContent } from './SectionContent'
 import { HiOutlineMenu } from 'react-icons/hi'
 import { IoMdClose } from 'react-icons/io'
-import { BsFillSunFill, BsMoon } from 'react-icons/bs'
 
 const Logo = styled(Slot, {
   img: {
@@ -168,20 +167,6 @@ const Container = styled('header', {
   },
 })
 
-interface ThemeProps {
-  theme: string
-}
-
-const Theme = ({ theme }: ThemeProps) => {
-  return theme === 'light' ? (
-    <BsFillSunFill />
-  ) : theme === 'dark' ? (
-    <BsMoon />
-  ) : (
-    ''
-  )
-}
-
 interface HeaderComponentProps {
   children: ReactNode
 }
@@ -215,5 +200,4 @@ export const Header = {
   Logo,
   Ul,
   Li,
-  Theme,
 }

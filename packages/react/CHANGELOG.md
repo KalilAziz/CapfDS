@@ -1,5 +1,11 @@
 # @capfds-ui/react
 
+## 2.7.0
+
+### Minor Changes
+
+- Toggle theme
+
 ## 2.6.0
 
 ### Minor Changes

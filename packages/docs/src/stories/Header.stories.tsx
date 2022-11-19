@@ -1,9 +1,24 @@
 import { Meta, StoryObj } from '@storybook/react'
 import { Button, Header, Text } from '@capfds-ui/react'
-import { BsBoxArrowInRight } from 'react-icons/bs'
+import { BsBoxArrowInRight, BsFillSunFill, BsMoon } from 'react-icons/bs'
 import { IoIosArrowDown } from 'react-icons/io'
 import { useState } from 'react'
 import imageLogo from '../assets/images/logoCapf.svg'
+
+interface ThemeProps {
+  theme: string
+}
+
+const Theme = ({ theme }: ThemeProps) => {
+  return theme === 'light' ? (
+    <BsFillSunFill />
+  ) : theme === 'dark' ? (
+    <BsMoon />
+  ) : (
+    <div style={{ all: 'unset' }} />
+  )
+}
+
 export default {
   title: 'Components/Header',
   component: Header.Root,
@@ -54,7 +69,7 @@ export default {
           </Header.Li>
 
           <Header.Li>
-            <Header.Theme theme={true} />
+            <Theme theme="light" />
           </Header.Li>
         </Header.Ul>
       </Header.Navbar>,
