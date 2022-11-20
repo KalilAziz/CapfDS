@@ -1,6 +1,6 @@
-import { styled } from '../../styles'
+import { styled } from '../styles'
 
-export const TextComponent = styled('p', {
+export const Text = styled('p', {
   fontFamily: '$default',
   lineHeight: '$base',
   margin: '0',
@@ -23,9 +23,18 @@ export const TextComponent = styled('p', {
     },
     colors: {
       green50: { color: '$green50' },
+      green100: { color: '$green100' },
+      green150: { color: '$green150' },
+      green200: { color: '$green200' },
+      green300: { color: '$green300' },
+      green400: { color: '$green400' },
       green500: { color: '$green500' },
+      green600: { color: '$green600' },
+      green650: { color: '$green650' },
       green700: { color: '$green700' },
+      green800: { color: '$green800' },
       green900: { color: '$green900' },
+      yellow900: { color: '$yellow900' },
     },
   },
 

@@ -1,7 +1,7 @@
-import { styled } from '../../styles'
+import { styled } from '../styles'
 import { Slot } from '@radix-ui/react-slot'
 
-export const HeadingComponent = styled(Slot, {
+export const Heading = styled(Slot, {
   variants: {
     size: {
       xxs: { fontSize: '$xxs' }, // 12px

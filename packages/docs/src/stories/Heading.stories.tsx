@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Heading, HeadingProps } from '@capfds-ui/react'
+import { Heading } from '@capfds-ui/react'
 
 export default {
   title: 'Typography/Heading',
@@ -34,6 +34,6 @@ export default {
       },
     },
   },
-} as Meta<HeadingProps>
+} as Meta
 
-export const Primary: StoryObj<HeadingProps> = {}
+export const Primary: StoryObj = {}

@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Text, TextProps } from '@capfds-ui/react'
+import { Text } from '@capfds-ui/react'
 
 export default {
   title: 'Typography/Text',
@@ -7,7 +7,6 @@ export default {
   args: {
     size: 'md',
     children: 'Text Component Text',
-    dark: false,
     colors: 'green700',
   },
   argTypes: {
@@ -34,10 +33,24 @@ export default {
     colors: {
       control: {
         type: 'select',
-        options: ['green50', 'green500', 'green700', 'green900'],
+        options: [
+          'green50',
+          'green100',
+          'green150',
+          'green200',
+          'green300',
+          'green400',
+          'green500',
+          'green600',
+          'green650',
+          'green700',
+          'green800',
+          'green900',
+          'yellow900',
+        ],
       },
     },
   },
-} as Meta<TextProps>
+} as Meta
 
-export const Primary: StoryObj<TextProps> = {}
+export const Primary: StoryObj = {}

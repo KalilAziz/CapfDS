@@ -23,21 +23,13 @@ const BoxContent = styled('div', {
   minWidth: 325,
   borderLeft: '2px solid',
   borderColor: '$green100',
-  textAlign: 'center',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  color: '$green50',
-  gap: '$4',
+  padding: '$3 $4',
 
   p: {
     color: '$green50',
-    fontSize: '$4xl',
   },
   span: {
     color: '$green50',
-    fontSize: '$2xl',
   },
 
   '@bp1': {
@@ -47,11 +39,9 @@ const BoxContent = styled('div', {
 
     p: {
       color: '$green50',
-      fontSize: '$2xl',
     },
     span: {
       color: '$green50',
-      fontSize: '$xl',
     },
   },
 })
@@ -60,12 +50,13 @@ const BoxImage = styled('div', {
   minWidth: 325,
   borderRight: '2px solid',
   borderColor: '$green100',
-
+  padding: '$3 $4',
   display: 'flex',
   alignItems: 'center',
-
+  justifyContent: 'center',
+  flexDirection: 'column',
   img: {
-    width: '100%',
+    width: 'auto',
     objectFit: 'cover',
   },
 

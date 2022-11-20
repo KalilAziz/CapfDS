@@ -1,5 +1,11 @@
 # @capfds-ui/react
 
+## 2.11.0
+
+### Minor Changes
+
+- Setting components Text, Heading and BoxComponentSection
+
 ## 2.10.0
 
 ### Minor Changes
