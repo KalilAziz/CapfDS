@@ -20,8 +20,8 @@ export const colorsWhite = {
 }
 
 export const colorsDark = {
+  backgroundColor: '#213426',
   black: '#FFFFFF',
   white: '#000000',
-  backgroundColor: '#213426',
   green700: '#2A794A',
 }

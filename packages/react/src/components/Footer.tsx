@@ -21,11 +21,11 @@ const Container = styled('footer', {
   svg: {
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'center',
+    width: '1.8rem',
     minHeight: '1.8rem',
     Height: '1.8rem',
     minWidth: '1.8rem',
-    width: '1.8rem',
-    justifyContent: 'center',
     color: '$yellow900',
     fontSize: '$5xl',
   },

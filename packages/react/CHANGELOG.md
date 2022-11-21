@@ -1,5 +1,11 @@
 # @capfds-ui/react
 
+## 2.13.0
+
+### Minor Changes
+
+- tokens green700dark
+
 ## 2.12.0
 
 ### Minor Changes
