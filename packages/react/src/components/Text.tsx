@@ -21,7 +21,10 @@ export const Text = styled('p', {
       '8xl': { fontSize: '$8xl' },
       '9xl': { fontSize: '$9xl' },
     },
+
     colors: {
+      white: { color: '$white' },
+      black: { color: '$black' },
       green50: { color: '$green50' },
       green100: { color: '$green100' },
       green150: { color: '$green150' },

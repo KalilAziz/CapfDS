@@ -1,5 +1,11 @@
 # @capfds-ui/react
 
+## 2.12.0
+
+### Minor Changes
+
+- include color white and black component text
+
 ## 2.11.0
 
 ### Minor Changes

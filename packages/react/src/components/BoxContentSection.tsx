@@ -28,19 +28,12 @@ const BoxContent = styled('div', {
   p: {
     color: '$green50',
   },
-  span: {
-    color: '$green50',
-  },
 
   '@bp1': {
     borderLeft: 'none',
     borderTop: '2px solid',
-    borderColor: '$green100',
 
     p: {
-      color: '$green50',
-    },
-    span: {
       color: '$green50',
     },
   },

@@ -34,6 +34,8 @@ export default {
       control: {
         type: 'select',
         options: [
+          'white',
+          'black',
           'green50',
           'green100',
           'green150',
