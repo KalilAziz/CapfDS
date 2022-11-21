@@ -21,7 +21,7 @@ export const colorsWhite = {
 
 export const colorsDark = {
   black: '#FFFFFF',
-
+  white: '#000000',
   backgroundColor: '#213426',
-  green700: '#FFFFFF',
+  green700: '#2A794A',
 }
