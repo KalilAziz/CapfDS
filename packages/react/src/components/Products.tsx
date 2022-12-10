@@ -29,6 +29,10 @@ const Root = styled('div', {
       transition: 'all 0.3s ease',
     },
   },
+
+  '@bp3': {
+    minHeight: 400,
+  },
 })
 
 const Image = styled(Slot, {

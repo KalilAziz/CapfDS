@@ -93,10 +93,6 @@ const Line = styled('div', {
   },
 })
 
-interface LineProps {
-  children: ReactNode
-}
-
 const ToggleMenu = styled(Slot, {
   position: 'relative',
   top: '2rem',
@@ -121,6 +117,10 @@ const ToggleMenu = styled(Slot, {
     },
   },
 })
+
+interface LineProps {
+  children: ReactNode
+}
 
 const UserType = ({ children }: LineProps) => {
   return (
@@ -150,7 +150,6 @@ const HeaderDashboardComponent = ({
   status,
   college,
   course,
-  period,
   registration,
 }: HeaderDashboardComponentProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
