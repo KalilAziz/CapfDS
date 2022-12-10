@@ -171,10 +171,10 @@ interface HeaderComponentProps {
   children: ReactNode
 }
 
-const HeaderComponent = ({ children }: HeaderComponentProps) => {
+const HeaderComponent = ({ children, ...props }: HeaderComponentProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
-    <Container openMenu={isMenuOpen}>
+    <Container openMenu={isMenuOpen} {...props}>
       <SectionContent
         css={{
           display: 'flex',

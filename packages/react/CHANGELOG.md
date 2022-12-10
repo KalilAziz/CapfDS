@@ -1,5 +1,11 @@
 # @capfds-ui/react
 
+## 2.15.0
+
+### Minor Changes
+
+- header
+
 ## 2.14.0
 
 ### Minor Changes
